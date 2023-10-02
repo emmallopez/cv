@@ -31,8 +31,10 @@ main {
 }
 
 .item {
-  width: 350px;
+  width: 30%;
   height: 250px;
+  position: center;
+
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(194, 160, 160);
   padding: 5px;
@@ -52,7 +54,7 @@ main {
 .övrebox {
     background-color: rgb(194, 160, 160);
     border: rgb(0, 0, 0);
-    padding: 10px;
+    padding: 1px;
 }
 
 a {
@@ -73,7 +75,7 @@ a {
 
 .parent {
   display:flex;
-  flex-direction: row;
+  flex-direction: row; 
   justify-content: center;
 }
 
@@ -128,3 +130,4 @@ footer {
   text-align: center;
 
 }
+
