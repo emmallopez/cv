@@ -1,27 +1,36 @@
+html{
+  height:100%;
+}
+
 body{
-   background-color: rgb(255, 255, 255);
-   font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(255, 255, 255);
+  font-family:Georgia, 'Times New Roman', Times, serif;
   margin: 0px;
   padding: 0px;
+  min-height:100vh;
 }
 
 
 header{
-    position:fixed;
-    top: 0;
-    left: 0;
-    background-color: rgb(132, 105, 105);
-    color: white ;
-    width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid white;
-    text-align: center;
+  position:fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(132, 105, 105);
+  color: white ;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  text-align: center;
 
+}
+header a{
+  color:#fff;
+  z-index:5;
 }
 
 main {
   margin-top: 90px;
-
+  min-height:100vh;
 }
 
 .box {
@@ -32,7 +41,7 @@ main {
 
 .item {
   width: 30%;
-  height: 250px;
+  height: 275px;
   position: center;
 
   border: 1px solid rgb(0, 0, 0);
@@ -40,27 +49,29 @@ main {
   padding: 5px;
   margin: 10px;
   box-shadow: 2px 2px 5px black;
+}
 
+.item p {
+padding: 0px 20px;
 }
 
 .text {
-    position:fixed;
-    width: 100%;
-    background-color: beige;
-    text-align: center;
-
+  position:fixed;
+  width: 100%;
+  background-color: beige;
+  text-align: center;
 }
 
-.övrebox {
-    background-color: rgb(194, 160, 160);
-    border: rgb(0, 0, 0);
-    padding: 1px;
+.ovrebox {
+  background-color: rgb(194, 160, 160);
+  border: rgb(0, 0, 0);
+  padding: 1px;
 }
 
 a {
-    text-decoration:none;
-
+  text-decoration:none;
 }
+
 .tabbed-content{
     white-space: pre-line;
 }
@@ -77,6 +88,8 @@ a {
   display:flex;
   flex-direction: row; 
   justify-content: center;
+  gap:10px;
+  padding:5px 0px;
 }
 
 
@@ -117,10 +130,7 @@ input[type=submit]:hover {
 }
 
 footer {
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
-
+  height: auto !important;
   position: static;
   margin-bottom:-20px;
   bottom: 0;
@@ -128,6 +138,12 @@ footer {
   background-color: rgb(132, 105, 105);
   color: white;
   text-align: center;
-
 }
 
+footer a{
+  color:#fff;
+}
+
+footer ul{
+  padding:10px 0px;
+}
